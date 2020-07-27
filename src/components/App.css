@@ -22,6 +22,31 @@ Variables
     --bs-primary: 0 0 .8em .2em #00002c;
     --tran-primary: all 300ms linear;
     --tran-secondary: all 400ms ease;
+
+    --btn-primary: #007bff;
+    --btn-primary-act: #0062cc;
+    --btn-primary-dis: #58a8ff;
+    --btn-secondary: #4d4d4d;
+    --btn-secondary-act: #414040;
+    --btn-secondary-dis: #757575;
+    --btn-success: #28a745;
+    --btn-success-act: #0d922c;
+    --btn-success-dis: #54e075;
+    --btn-danger: #dc3545;
+    --btn-danger-act: #c42131;
+    --btn-danger-dis: #f76b79;
+    --btn-warning: #ffc107;
+    --btn-warning-act: #dda704;
+    --btn-warning-dis: #fdd868;
+    --btn-info: #17a2b8;
+    --btn-info-act: #09879b;
+    --btn-info-dis: #53d0e4;
+    --btn-light: #f5f5f5;
+    --btn-light-act: #c7c6c6;
+    --btn-light-dis: #ffffff;
+    --btn-dark: #3b3b3b;
+    --btn-dark-act: #202020;
+    --btn-dark-dis: #969696;
 }
 
 /*

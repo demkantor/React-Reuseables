@@ -9,16 +9,20 @@ const ButtonsPage = () => {
             <section>
                 <div className="btn-container">
                     <Button 
-                        text={'hello'} 
-                        size={'sm'} />
-                    <Button 
-                        text={'hello'} 
+                        text={'hello'}
+                        color={'primary'} 
                         size={'sm'} />
                     <Button 
                         text={'hello'}
+                        color={'primary'}  
+                        size={'md'} />
+                    <Button 
+                        text={'hello'}
+                        color={'primary'} 
                         size={'lg'} />
                     <Button 
-                        text={'hello'} />
+                        value={'hello'} />
+                    <Button>This one</Button>
                 </div>
                 <div className="container">
                     

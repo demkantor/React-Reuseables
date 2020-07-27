@@ -12,6 +12,12 @@
 .btn {
     width: 8em;
     height: 3em;
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5em;
+    margin: 2em;
+    transition: var(--tran-secondary);
 }
 
 .sm {
@@ -22,4 +28,14 @@
 .lg {
     width: 10em;
     height: 3.5em;
+}
+
+.primary {
+    color: var(--text-primary);
+    background: var(--btn-primary);
+}
+
+.primary:hover, .primary:focus {
+    background: var(--btn-primary-act);
+    transition: var(--tran-secondary);
 }
