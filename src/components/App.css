@@ -27,7 +27,7 @@ Variables
     --btn-primary-act: #0062cc;
     --btn-primary-dis: #58a8ff;
     --btn-secondary: #4d4d4d;
-    --btn-secondary-act: #414040;
+    --btn-secondary-act: #3d3c3c;
     --btn-secondary-dis: #757575;
     --btn-success: #28a745;
     --btn-success-act: #0d922c;
@@ -179,7 +179,7 @@ Global Classes
 .section-center {
     width: 90vw;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1370px;
 }
 
 @media screen and (min-width: 992px) {
@@ -199,6 +199,18 @@ main {
     overflow: hidden;
 }
 
+.section-title {
+    font-size: x-large;
+    font-weight: 900;
+}
+
 .title {
+    min-width: 80vw;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        min-width: 40vw;
+    }
 }

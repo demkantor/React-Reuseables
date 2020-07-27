@@ -1,14 +1,21 @@
 .btns-wrapper {
     margin: 2em;
+    display: inline-block;
 }
 
 .btn-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* grid-auto-rows: minmax(100px, auto); */
     grid-gap: 1em;
 }
 
+.btn-container-lg {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-gap: 1em;
+}
 .btn {
     width: 8em;
     height: 3em;
@@ -16,8 +23,26 @@
     text-transform: uppercase;
     border: none;
     border-radius: .5em;
-    margin: 2em;
+    margin: 1em 4em;
+    padding: 1em;
+    cursor: pointer;
+    color: var(--text-primary);
+    background: var(--bg-teritary);
     transition: var(--tran-secondary);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover, .btn:focus {
+    filter: opacity(0.7);
+    transition: var(--tran-secondary);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    filter: grayscale(40%) opacity(0.7);
 }
 
 .sm {
@@ -30,6 +55,27 @@
     height: 3.5em;
 }
 
+.block {
+    width: 100%
+}
+
+.outline {
+    border: 1px solid var(--btn-primary);
+    background: none;
+    color: var(--btn-primary);
+}
+
+.outline:hover, .outline:focus {
+    border: var(--btn-primary-act);
+    color: var(--btn-primary-act);
+    transition: var(--tran-secondary);
+}
+
+.outline:disabled {
+    border: var(--btn-primary-dis);
+    color: var(--btn-primary-dis);
+}
+
 .primary {
     color: var(--text-primary);
     background: var(--btn-primary);
@@ -38,4 +84,106 @@
 .primary:hover, .primary:focus {
     background: var(--btn-primary-act);
     transition: var(--tran-secondary);
+}
+
+.primary:disabled {
+    background: var(--btn-primary-dis);
+}
+
+.secondary {
+    color: var(--text-primary);
+    background: var(--btn-secondary);
+}
+
+.secondary:hover, .secondary:focus {
+    background: var(--btn-secondary-act);
+    transition: var(--tran-secondary);
+}
+
+.secondary:disabled {
+    background: var(--btn-secondary-dis);
+}
+
+.success {
+    color: var(--text-primary);
+    background: var(--btn-success);
+}
+
+.success:hover, .success:focus {
+    background: var(--btn-success-act);
+    transition: var(--tran-secondary);
+}
+
+.success:disabled {
+    background: var(--btn-success-dis);
+}
+
+.danger {
+    color: var(--text-primary);
+    background: var(--btn-danger);
+}
+
+.danger:hover, .danger:focus {
+    background: var(--btn-danger-act);
+    transition: var(--tran-secondary);
+}
+
+.danger:disabled {
+    background: var(--btn-danger-dis);
+}
+
+.warning {
+    color: var(--text-secondary);
+    background: var(--btn-warning);
+}
+
+.warning:hover, .warning:focus {
+    background: var(--btn-warning-act);
+    transition: var(--tran-secondary);
+}
+
+.warning:disabled {
+    background: var(--btn-warning-dis);
+}
+
+.info {
+    color: var(--text-primary);
+    background: var(--btn-info);
+}
+
+.info:hover, .info:focus {
+    background: var(--btn-info-act);
+    transition: var(--tran-secondary);
+}
+
+.info:disabled {
+    background: var(--btn-info-dis);
+}
+
+.light {
+    color: var(--text-secondary);
+    background: var(--btn-light);
+}
+
+.light:hover, .light:focus {
+    background: var(--btn-light-act);
+    transition: var(--tran-secondary);
+}
+
+.light:disabled {
+    background: var(--btn-light-dis);
+}
+
+.dark {
+    color: var(--text-primary);
+    background: var(--btn-dark);
+}
+
+.dark:hover, .dark:focus {
+    background: var(--btn-dark-act);
+    transition: var(--tran-secondary);
+}
+
+.dark:disabled {
+    background: var(--btn-dark-dis);
 }
