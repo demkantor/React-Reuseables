@@ -3,7 +3,8 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            <h1>what waht@</h1>
+            <h1 className="title">Reuseable React Components</h1>
+            
         </div>
     );
 };

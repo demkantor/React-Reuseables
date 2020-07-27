@@ -173,3 +173,7 @@ main {
     margin-left: 4.4em;
     overflow: hidden;
 }
+
+.title {
+    text-align: center;
+}
