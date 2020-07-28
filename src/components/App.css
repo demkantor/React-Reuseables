@@ -197,6 +197,7 @@ main {
 .main-wrapper {
     margin-left: 4.4em;
     overflow: hidden;
+    min-height: calc(100vh - 50px);
 }
 
 .section-title {
