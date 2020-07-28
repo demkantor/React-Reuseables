@@ -16,6 +16,7 @@
     /* grid-auto-rows: minmax(100px, auto); */
     grid-gap: 1em;
 }
+
 .btn {
     width: 8em;
     height: 3em;
@@ -186,4 +187,24 @@
 
 .dark:disabled {
     background: var(--btn-dark-dis);
+}
+
+@media screen and (max-width: 600px) {
+    .btns-wrapper {
+        margin: .5em;
+    }
+
+    .btn-container {
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+        grid-gap: 0em;
+    }
+
+    .btn-container-lg {
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+        grid-gap: 0em;
+    }
+
+    .btn {
+        margin: 1em;
+    }
 }

@@ -3,6 +3,11 @@ import Button from './Button';
 import './Button.css';
 
 const ButtonsPage = () => {
+
+    const btnInfo = (event) => {
+        console.log('hey', event.target)
+    }
+
     return (
         <div className="btns-wrapper">
             <h1 className="title">Buttons Page</h1>
@@ -11,6 +16,7 @@ const ButtonsPage = () => {
                 <div className="btn-container">
                     <Button 
                         text={'default'}
+                        onClick={btnInfo}
                          />
                     <Button 
                         text={'primary'}
@@ -86,17 +92,21 @@ const ButtonsPage = () => {
                         icon_back={'shopping_cart'} />
                 </div>
                 <div className="section-title">Legend</div>
-                <p>
+                <p className="legend-block">
                     {"text={''}"}
                     {" options: any text you want to display"}
                 </p>
-                <p>
+                <p className="legend-block">
                     {"color={''}"}
                     {" options: primary, secondary, success, danger, "}
                 </p>
-                <p>
+                <p className="legend-block">
                     {"size={''}"}
                     {" options: sm, md, lg, block "}
+                </p>
+                <p className="legend-block">
+                    {"variant={''}"}
+                    {" options: outline "}
                 </p>
             </section>
         </div>

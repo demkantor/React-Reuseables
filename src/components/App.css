@@ -209,6 +209,11 @@ main {
     text-align: center;
 }
 
+.legend-block {
+    margin: 0;
+    margin-left: 2em;
+}
+
 @media screen and (max-width: 600px) {
     .title {
         min-width: 40vw;
