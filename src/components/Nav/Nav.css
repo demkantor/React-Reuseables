@@ -28,6 +28,7 @@
     font-weight: bold;
     font-size: 1rem;
     border-bottom: .1em solid var(--bg-primary);
+    transition: var(--tran-secondary);
 }
 
 .navbar__link .material-icons {

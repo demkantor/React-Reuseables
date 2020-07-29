@@ -35,18 +35,18 @@ const ColorsPage = () => {
 
     const darkButton = () => {
         document.body.classList.replace('light-theme', 'dark-theme');
-        document.querySelector('.navbar').classList.replace('dark-theme', 'light-theme');
+        document.querySelector('.navbar').classList.replace('dark-theme-nav', 'light-theme-nav');
         let links = document.querySelectorAll('.navbar__link');
-        links.forEach(link => link.classList.replace('dark-theme', 'light-theme'));
+        links.forEach(link => link.classList.replace('dark-theme-nav', 'light-theme-nav'));
         localStorage.setItem('theme', 'dark-theme');
         setMyTheme('dark');
     };
 
     const lightButton = () => {
         document.body.classList.replace('dark-theme', 'light-theme');
-        document.querySelector('.navbar').classList.replace('light-theme', 'dark-theme');
+        document.querySelector('.navbar').classList.replace('light-theme-nav', 'dark-theme-nav');
         let links = document.querySelectorAll('.navbar__link');
-        links.forEach(link => link.classList.replace('light-theme', 'dark-theme'));
+        links.forEach(link => link.classList.replace('light-theme-nav', 'dark-theme-nav'));
         localStorage.setItem('theme', 'light-theme');
         setMyTheme('light');
     };

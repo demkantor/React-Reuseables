@@ -17,8 +17,8 @@ const Nav = () => {
 
 
     return (
-        <div id="nav" className="navbar dark-theme">
-            <button className="nav-menu dark-theme" onClick={toggleOpen}>
+        <div id="nav" className="navbar dark-theme-nav">
+            <button className="nav-menu dark-theme-nav" onClick={toggleOpen}>
 
                 {isOpen
                 ?
@@ -32,25 +32,25 @@ const Nav = () => {
                 }
                 
             </button>
-            <Link to="/" className="navbar__link dark-theme" onClick={closeNav}>
+            <Link to="/" className="navbar__link dark-theme-nav" onClick={closeNav}>
                 Home
                 <span className="material-icons">
                     home
                 </span>   
             </Link>
-            <Link to="/colors" className="navbar__link dark-theme" onClick={closeNav}>
+            <Link to="/colors" className="navbar__link dark-theme-nav" onClick={closeNav}>
                 Color Themes
                 <span className="material-icons">
                     color_lens
                 </span>   
             </Link>
-            <Link to="/buttons" className="navbar__link dark-theme" onClick={closeNav}>
+            <Link to="/buttons" className="navbar__link dark-theme-nav" onClick={closeNav}>
                 Buttons
                 <span className="material-icons">
                     smart_button
                 </span>   
             </Link>
-            <Link to="/inputs" className="navbar__link dark-theme" onClick={closeNav}>
+            <Link to="/inputs" className="navbar__link dark-theme-nav" onClick={closeNav}>
                 Inputs
                 <span className="material-icons">
                     keyboard

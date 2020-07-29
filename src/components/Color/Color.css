@@ -15,12 +15,13 @@
     color: var(--text-primary);
 }
 
-.dark-theme > .navbar__link {
+.dark-theme_nav {
     color: var(--text-secondary);
     border-bottom: none;
 }
 
-.light-theme > .navbar__link {
+.light-theme-nav {
+    background: var(--bg-teritary);
     color: var(--text-secondary);
     border-bottom: none;
 }
