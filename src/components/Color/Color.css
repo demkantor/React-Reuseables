@@ -1,0 +1,6 @@
+.color-page {
+    padding-top: 2em;
+    display: inline-block;
+    width: 100%;
+    height: calc(100vh - 3em);
+}

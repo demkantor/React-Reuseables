@@ -165,6 +165,7 @@ Material Icons
     word-wrap: normal;
     direction: ltr;
     -moz-osx-font-smoothing: grayscale;
+    transition: var(--tran-secondary);
 }
 
 /*
@@ -213,6 +214,18 @@ main {
 .legend-block {
     margin: 0;
     margin-left: 2em;
+}
+
+.container {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.inline-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
