@@ -38,6 +38,12 @@ const Nav = () => {
                     home
                 </span>   
             </Link>
+            <Link to="/colors" className="navbar__link" onClick={closeNav}>
+                Color Themes
+                <span className="material-icons">
+                    color_lens
+                </span>   
+            </Link>
             <Link to="/buttons" className="navbar__link" onClick={closeNav}>
                 Buttons
                 <span className="material-icons">

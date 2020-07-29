@@ -7,6 +7,7 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 
 import ButtonsPage from './Buttons/ButtonsPage';
+import ColorsPage from './Color/ColorsPage';
 import InputsPage from './Inputs/InputsPage';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <div className="main-wrapper">
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/colors" component={ColorsPage}/>
               <Route exact path="/buttons" component={ButtonsPage}/>
               <Route exact path="/inputs" component={InputsPage}/>
 
