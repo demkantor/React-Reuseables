@@ -13,6 +13,8 @@ const ColorsPage = () => {
             if (theme) {
                 document.body.classList.add(theme);
                 setMyTheme(theme);
+            } else {
+                document.body.classList.add('light-theme');
             }
         };
 
