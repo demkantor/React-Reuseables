@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 import './Button.css';
 
 const ButtonsPage = () => {
+
+    const [disabled, setDisabled] = useState(false)
 
     return (
         <div className="btns-wrapper">
@@ -12,48 +14,68 @@ const ButtonsPage = () => {
                 <div className="btn-container">
                     <Button 
                         text={'default'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'default'} />" )}
                          />
                     <Button 
                         text={'primary'}
                         color={'primary'} 
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'primary'} color={'primary'}  />" )}
                         />
                     <Button 
                         text={'secondary'}
-                        color={'secondary'} 
+                        color={'secondary'}
+                        disabled= {disabled ? true : false} 
                         onClick={()=>alert( "<Button text={'secondary'} color={'secondary'}  />" )}
                         />
                     <Button 
                         text={'success'}
-                        color={'success'} 
+                        color={'success'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'success'} color={'success'}  />" )} 
                         />
                     <Button 
                         text={'danger'}
-                        color={'danger'} 
+                        color={'danger'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'danger'} color={'danger'}  />" )} 
                         />
                     <Button 
                         text={'warning'}
-                        color={'warning'}  
+                        color={'warning'}
+                        disabled= {disabled ? true : false} 
                         onClick={()=>alert( "<Button text={'warning'} color={'warning'}  />" )}
                         />
                     <Button 
                         text={'info'}
-                        color={'info'} 
+                        color={'info'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'info'} color={'info'}  />" )} 
                         />
                     <Button 
                         text={'light'}
-                        color={'light'}  
+                        color={'light'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'light'} color={'light'}  />" )}
                         />
                     <Button 
                         text={'dark'}
-                        color={'dark'}  
+                        color={'dark'}
+                        disabled= {disabled ? true : false}
                         onClick={()=>alert( "<Button text={'dark'} color={'dark'}  />" )}
                         />
+                    <div className="switch" onClick={()=>setDisabled(!disabled)}>
+                        <span className="material-icons">
+                            {disabled ?
+                            "toggle_on"
+                            :
+                            "toggle_off"
+                            }
+                        </span>
+                        disabled
+                    </div>
+                    
                 </div>
                 <div className="section-title">Sizes</div>
                 <div className="btn-container-lg">

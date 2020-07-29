@@ -5,16 +5,28 @@
 
 .btn-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     /* grid-auto-rows: minmax(100px, auto); */
     grid-gap: 1em;
 }
 
 .btn-container-lg {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     /* grid-auto-rows: minmax(100px, auto); */
     grid-gap: 1em;
+}
+
+.switch {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: smaller;
+    line-height: .5em;
+    margin-left: 8em;
 }
 
 .btn {
@@ -195,12 +207,12 @@
     }
 
     .btn-container {
-        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
         grid-gap: 0em;
     }
 
     .btn-container-lg {
-        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
         grid-gap: 0em;
     }
 
