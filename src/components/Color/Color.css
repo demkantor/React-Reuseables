@@ -4,3 +4,23 @@
     width: 100%;
     height: calc(100vh - 3em);
 }
+
+.light-theme {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.dark-theme {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme > .navbar__link {
+    color: var(--text-secondary);
+    border-bottom: none;
+}
+
+.light-theme > .navbar__link {
+    color: var(--text-secondary);
+    border-bottom: none;
+}
